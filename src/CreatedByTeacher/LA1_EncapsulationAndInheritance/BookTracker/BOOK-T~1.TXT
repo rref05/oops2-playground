@@ -1,0 +1,13 @@
+Book Tracker - Java
+For this program, you are tasked to define the following:
+Class - Book:
+Public Properties:
+public String title: Represents the title of the book.
+public String author: Indicates the author of the book.
+public int yearPublished: Holds the year in which the book was published.
+
+Constructors:
+Default Constructor: public Book()
+Does not accept any parameters. It initializes title and author to "Unknown" and yearPublished to 0. This constructor is used when creating a Book object without specific information.
+Parameterized Constructor: public Book(String title, String author, int yearPublished)
+Accepts parameters for title (a String), author (a String), and yearPublished (an int). It sets the respective properties to these values. This constructor is suitable for instances where complete information about the book is available during object creation
