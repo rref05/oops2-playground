@@ -1,0 +1,37 @@
+Cellphone Load - Java
+For this program, you are tasked to define the following:
+
+Class - CellphoneLoad:
+Private Properties:
+private boolean hasUnlimitedCalls: Indicates if the load has unlimited calls.
+private boolean hasUnlimitedTexts: Indicates if the load has unlimited texts.
+private int internetMB: Represents the amount of internet MBs included in the load.
+
+Constructor:
+public CellphoneLoad(boolean hasUnlimitedCalls, boolean hasUnlimitedTexts, int internetMB): Initializes the respective properties.
+Getter Methods: For hasUnlimitedCalls, hasUnlimitedTexts, and internetMB.
+
+
+Subclasses of CellphoneLoad:
+CITLoad (extends CellphoneLoad):
+Constructor: public CITLoad(): Calls the constructor of CellphoneLoad with true for unlimited calls and texts, and 1000 for internetMB.
+
+CTLoad (extends CellphoneLoad):
+Constructor: public CTLoad(): Calls the constructor of CellphoneLoad with true for unlimited calls and texts, and 0 for internetMB.
+
+ILoad (extends CellphoneLoad):
+Constructor: public ILoad(): Calls the constructor of CellphoneLoad with false for unlimited calls and texts, and 2000 for internetMB.
+
+
+Class - Phone:
+Private Properties:
+private boolean hasUnlimitedCalls
+private boolean hasUnlimitedTexts
+private int internetMB
+
+Constructor:
+public Phone(): Sets hasUnlimitedCalls and hasUnlimitedTexts to false, and internetMB to 0.
+Methods:
+public void load(CellphoneLoad load): Accepts a CellphoneLoad object and sets the phone properties according to the properties of the load. Adds load's internetMB to the phone's internetMB.
+public String toString(): Returns a string in the format "Has unlimited calls = {true|false}, Has unlimited texts = {true|false}, internet MB = {internetMB}".
+
