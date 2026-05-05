@@ -1,0 +1,31 @@
+RPG Characters - Java
+RPG, or Role Playing Games is one of my favorite types of game; I get to interact with other players! For this program, we will be implementing these characters.
+
+Base Class - Character:
+Private Properties:
+private int health: The health of the character.
+private int damage: The damage capability of the character.
+private int shield: The shield strength of the character.
+
+Constructor:
+public Character(int health, int damage, int shield): Initializes the health, damage, and shield properties.
+Getter Methods: For health, damage, and shield.
+Setter Method: For health.
+
+Method:
+public void receiveDamage(int damage): Updates health by subtracting the difference between damage and shield. Prints "Character has died" if health drops to 0 or less.
+
+
+Subclass - Swordsman (extends Character):
+Constructor:
+public Swordsman(): Calls the constructor of Character with 100 for health, 10 for damage, and 10 for shield.
+
+Subclass - Paladin (extends Swordsman):
+Additional Property:
+boolean hasResurrected: Indicates if the Paladin has already resurrected once.
+Constructor:
+public Paladin(): Calls the constructor of Swordsman and initializes hasResurrected to false.
+Methods:
+@Override public void receiveDamage(int damage): If damage is even, divides it by 2 before reducing it by the shield and deducting from health. Calls resurrect() if health drops to 0 or less.
+public void resurrect(): If hasResurrected is false, sets hasResurrected t true and restores health to 100. Otherwise, prints "Paladin has died".
+
