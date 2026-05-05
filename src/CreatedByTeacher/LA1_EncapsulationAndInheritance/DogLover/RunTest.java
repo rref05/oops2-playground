@@ -9,11 +9,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * ACTIVITY: LA1 — Dog Lover
- * File:     TestDogLover.java
+ * File:     RunTest.java
  *
  * Place alongside Dog.java.
  */
-class TestDogLover {
+public class RunTest {
 
     // ── Sample Output 1: All fields are private ───────────────────────────
     @Test

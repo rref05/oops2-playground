@@ -1,4 +1,4 @@
 package CreatedByTeacher.LA4pt1_Comparators.NearestToFifty;
 
-public class TestNearestToFifty {
+public class RunTest {
 }

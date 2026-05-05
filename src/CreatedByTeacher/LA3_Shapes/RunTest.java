@@ -15,7 +15,7 @@
 // *  PI = 3.14159  (as final variable in subclasses as needed)
 // *  All area/perimeter printed with %.2f
 // */
-//public class TestShape {
+//public class RunTest {
 //
 //    static int passed = 0, failed = 0;
 //    static final double PI = 3.14159;
