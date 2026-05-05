@@ -1,0 +1,2 @@
+Nearest to a Number
+Write a Comparator class with name NumberComparator to sort the list of integer numbers closest to a particular number. If they have the same distance to said number, sort it by whatever was inputted first.

@@ -1,0 +1,34 @@
+Shape of You
+All the shapes have area and a perimeter, however their calculation is based on the shape itself. This means to say that there is a different formula as to calculating the area of a rectangle and a circle, for example.
+In this problem, you will be calculating the area and perimeter of a Rectangle, Square, Ellipse, Circle, Triangle and an Equilateral Triangle. One of these shapes will be used as the first input of this problem.
+
+For the classes, I have created an abstract class Shape and abstract methods to calculate the area and perimeter. You should already know the reason as to why I have made them abstract. In this class, there is only one field deemed common to all shapes: color. This will be used in the toString as shown in the code. Your subclasses must only declare one constructor as it shall be the only way to create that shape. Your subclasses should override the toString method to append the shape ("which is also " a/an [shape]). Examples are provided in the test cases.
+Note that a Square is a Rectangle. Similarly, a Circle is an Ellipse; an Equilateral Triangle is a Triangle. Use this to your advantage by not overriding the function to calculate the area and perimeter for Square, Circle, and Equilateral Triangle.
+
+In the main function, you should correctly prompt the user for the input. Assume all numerical inputs are floating-point decimal numbers. The prompt to be used is "Enter [value]:" where [value] is the italicized word in the input description below:
+
+
+(1) The Rectangle Class
+In a Rectangle, you will be provided the following 3 inputs: the length, width, and the color of the rectangle. The rectangle's area is length * width and its perimeter is 2 * length + 2 * width.
+In a Square, you are only provided 2 inputs, the value of the side and the color of the square. Its area is side squared, and its perimeter is 4 * side.
+
+
+(2) The Ellipse Class
+Make an Ellipse class and a Circle class. Note that the perimeter here is its circumference.
+In an Ellipse, you will be provided the following 3 inputs: the value of a, the value of b, and the color of the ellipse.
+In a Circle, you are only provided 2 inputs, the radius and the color of the circle.
+For the value of Pi, set it as a final variable with the value 3.14159.
+
+
+(3) The Triangle Class
+Make a Triangle class and an EquilateralTriangle class.
+In a Triangle, you will be provided the following 5 inputs: the base, height, and the values of its other two (2) sides a and c, and the color of the triangle.
+In an EquilateralTriangle, you are only provided 2 inputs, the value of the side and the color of the triangle.
+
+
+Inputs
+1. Shape
+Determines the shape.
+
+2. Shape measurements
+The next lines are the inputs associated with the shape.

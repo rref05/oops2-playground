@@ -1,0 +1,30 @@
+Dog Lover - Java
+For this program, you are tasked to define the following:
+
+Class - Dog:
+Private Properties:
+private String breed: Always set to "Golden Retriever".
+private char gender: Represents the gender of the dog, either 'm' for male or 'f' for female.
+private String color: The color of the dog, restricted to "gold" or "brown". Defaults to "gold" if an invalid color is provided.
+
+Constructor:
+public Dog(char gender, String color): Initializes the gender and color properties. Sets breed to "Golden Retriever". If the provided color is not "gold" or "brown", it defaults to "gold".
+
+Methods
+
+Getter Methods:
+public String getBreed(): Returns the breed of the dog.
+public char getGender(): Returns the gender of the dog.
+public String getColor(): Returns the color of the dog.
+
+Setter Methods:
+public void setGender(char gender): Sets the gender property of the Dog class to 'm' (male) or 'f' (female), disregarding any invalid input then defaulting to 'm'.
+public void setColor(String color): Sets the color property of the Dog class to "gold" or "brown"; if an invalid color is provided, it defaults to "gold".
+bark() Method:
+public void bark(int n): Accepts a positive integer n and prints "Woof" n times, each on a new line.
+toString() Method:
+public String toString(): Returns a string in the format "My (male|female), (color) Golden Retriever". The gender is formatted as "male" for 'm' and "female" for 'f'.
+Example Strings:
+For a male, gold Golden Retriever: "My male, gold Golden Retriever"
+For a female, brown Golden Retriever: "My female, brown Golden Retriever"
+
